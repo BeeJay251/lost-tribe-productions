@@ -1,20 +1,16 @@
 $main-text-color: #0f0707;
 $header-blue: #55AAFF;
-$main-text-font: ‘Ubuntu Condensed’, sans-serif;
-$header-font: ‘Ubuntu Condensed’, sans-serif;
+$main-text-font: "Ubuntu Condensed", sans-serif;
+$header-font: "Ubuntu Condensed", sans-serif;
 
-* {
-  box-sizing: border-box;
-}
 
 .Contact-Form {
-  max-width: 300px;
-  margin: 0 auto;
-}
-
-p {
-  text-align: center;
-  font-weight: 500;
+  font-family: "Ubuntu Condensed", sans-serif;
+  font-weight: 900;
+  align-items: center;
+  font-size: 1.50EM;
+  font-family: $main-text-font;
+  color: $main-text-color;
 }
 
 input[type=text],input[type=email], select, textarea {
@@ -37,15 +33,6 @@ input[type=submit] {
   cursor: pointer;
 }
 
-input[type=submit]:hover {
-  background-color: #55AAFF;
-}
-
-.container {
-  border-radius: 5px;
-  background-color: black;
-  padding: 20px;
-}
 
 .Contact-Container > h2 {
   color: $header-blue;
@@ -61,15 +48,4 @@ input[type=submit]:hover {
   justify-items: center;
   font-family: $main-text-font;
   color: $main-text-color;
-}
-
-.Contact-Info {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 10px;
-  width: 300px;
-}
-
-.Contact-Container {
-  width: 80vw;
 }
